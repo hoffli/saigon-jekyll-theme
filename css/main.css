@@ -351,7 +351,7 @@ only screen and (max-width: 600px) {
 }
 
 section{
-	background-image: url('/images/18asaigon-hero.jpg');
+	background-image: url('http://hoffli.github.io/saigon-jekyll-theme/images/18asaigon-hero.jpg');
 	background-size: cover;
 background-position: center;
 	height:100px;
