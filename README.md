@@ -1,5 +1,8 @@
 ##Saigon - Mansonry Jekyll Blog Theme
 
+* Color palette of http://clrs.cc
+* Demo http://hoffli.github.io/saigon-jekyll-theme/
+
 Based on a jekyll mansonry theme by Pasindu:
 
 * Original demo - http://pasindud.github.io/
