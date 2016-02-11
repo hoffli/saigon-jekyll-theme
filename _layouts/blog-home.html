@@ -37,10 +37,10 @@
 					{% for post in site.categories.blog %}
 						<li class='post'>
 							{% if post.image %}
-								<a href='{{post.url}}'><img class='post-image' src="{{ site.url }}{{post.image}}" /></a>
+								<a href='{{ site.url }}{{post.url}}'><img class='post-image' src="{{ site.url }}{{post.image}}" /></a>
 							{% endif %}
 							<div class="postcontent">
-					<a href='{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
+					<a href='{{ site.url }}{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
 
 								<div class='post-content'>{{post.summary}}</div>
 							</div>
