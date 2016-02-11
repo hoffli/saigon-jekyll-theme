@@ -1,0 +1,418 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Doppio+One);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+
+img, embed, object{
+	max-width: 100%;
+}
+
+
+.postcontent{
+	//padding : 10px;
+}
+
+body {
+	margin: 0px;
+	text-align: center;
+	padding: 0px 20px 0px 20px;
+	border-top: 4px solid #333;
+	background: #111;
+
+/*
+background-color: #F7F7F7;
+background-image: url('http://wpexplorer-demos.com/fabulous/wp-content/themes/wpex-fabulous/images/noise.png');
+background-image: url('http://cdn.elegantthemes.com/preview/Notebook/wp-content/themes/Notebook/images/body-bg.png');
+background-repeat: repeat;*/
+
+}
+
+body, div, a, input, select, button, textarea {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+
+code {
+	font-weight: bold;
+}
+
+pre code {
+	font-weight: normal;
+}
+
+a {
+/*
+	color: rgba(80, 160, 228);
+	font-size: 100%;*/
+	color: #444444;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img{
+	border: 0px;
+	box-shadow: 0 0px 5px #cccccc;
+	border-radius: 5px;
+    	//padding: 3px;
+}
+
+a img {
+	border: 0px;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: normal;
+}
+
+
+#layout {
+	/width: 90%;
+	margin: auto;
+	text-align: left;
+}
+
+#heading {
+	margin: 20px 0px 40px 0px;
+	position: relative;
+	padding: 0px 0px 15px 0px;
+	border-bottom: 0px solid #eee;
+}
+
+#logo {
+	float: left;
+	font-size: 20px;
+}
+
+#links a {
+	color: #666;
+}
+
+#logo a {
+    font-size: 20px;
+    color: #666;
+    text-decoration: none;
+    font-family: "Raleway";
+}
+
+
+#links {
+	float: right;
+	margin: 20px 0 0 0;
+	color: #eee;
+}
+
+#links img {
+
+	box-shadow: 0 0px 0px #cccccc;
+	border-radius: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+#content {
+    margin: 0px 15% 0px ;
+		background: #f4f4f4;
+		padding-top: 20px;
+		margin-top: 40px;
+}
+
+
+#footer {
+	margin: 30px 0px 0px 0px;
+	padding: 10px 0px 10px 0px;
+	border-top: 1px solid #dddddd;
+	text-align: center;
+	font-size: 13px;
+	background: #111;
+}
+
+#posts ul {
+	list-style:none;
+	margin: auto;
+	padding: 0px;
+	width: 80%;
+}
+
+#posts ul li {
+    margin: 0px 20px 20px 0px;
+    width: 250px;
+    float: left;
+    border-radius: 3px;
+    border: 0px solid #eee;
+    background: #222!important;
+    background: none repeat scroll 0% 0% #FFF;
+    border-radius: 0;
+    box-shadow: none;
+}
+#posts ul li img {
+	//width: 95%;
+}
+
+.post-title {
+	margin: 0px 0px 8px 0px;
+	line-height: 20px;
+	font-size: 20px;padding: 10px;
+}
+
+.post-image{
+	width: 250px;
+	box-shadow: 0 0px 0px #cccccc;
+	border-radius: 0px;
+    	//margin: 10px 0px 10px 0px;
+}
+
+.post-date {
+	font-size: 11px;
+	color: #666;padding: 10px;
+}
+
+.post-content {
+	margin-top: 10px;
+	font-size: 13px;
+
+	padding: 20px 30px;
+	background: url('http://wpexplorer-demos.com/fabulous/wp-content/themes/wpex-fabulous/images/entry-meta-shadow.png') no-repeat scroll center top #FBFBFB;
+	border-radius: 0px 0px 3px 3px;
+}
+
+#side-bar {
+background: #fff;
+/*background: none repeat scroll 0% 0% #FFF;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);*/
+border-radius: 3px;
+/*border: solid 1px rgba(99, 103, 106, 0.22);*/
+padding: 10px;
+width: 20%;
+float: left;
+margin: 20px 5px 0px 0px;
+}
+
+#side-bar #user-pic{
+	width: 80px;
+	height: 80px;
+}
+
+#side-bar #user-name{
+	font-size: 12px;
+	margin: 5px 0px 0px 0px;
+}
+
+#side-bar #tags {
+
+	margin: 20px 0px 0px 0px;
+}
+
+#side-bar #date {
+	font-size: 11px;
+}
+
+#page-title {
+	margin-top: 0px;
+	padding-top: 0px;
+	font-size: 20px;
+	color:#222;
+	font-weight: 800;
+}
+
+#page {
+	margin-top: 20px;
+	width: 80%;
+	color: #111;
+	margin-left: 10%;
+	text-align: left;
+	padding-left: 3%;
+ border-left: 1px dashed #ddd;
+font-size: 1em;
+overflow: hidden;
+/*background: none repeat scroll 0% 0% #FFF;
+box-shadow: 5px 8px 7px rgba(99, 60, 60, 0.15);*/
+border-radius: 3px;
+padding: 10px;
+//border: solid 1px rgba(99, 103, 106, 0.22);
+}
+
+.tag {
+	font-size: 12px;
+    padding: 2px 6px 2px 6px;
+    color: white;
+    line-height: 24px;
+}
+
+blockquote{
+
+	font-family: monospace;
+	font-size: 16px;
+	/*font-style: italic;*/
+	border-left: 4px solid #ddd;
+	padding-left: 20px;
+}
+
+.tag { background-color: #008080}
+
+
+/****** Media Queries For Adaptive Layouts******/
+
+@media only screen and (min-width: 1367) {
+
+	#posts ul li {
+		width: 220px;
+	}
+}
+
+@media only screen and (max-width: 1366) {
+
+	#posts ul li {
+		width: 273px;
+	}
+}
+
+/* Tables - Landscape */
+@media only screen and (max-width: 1280) {
+
+	#posts ul li {
+		width: 252px;
+	}
+
+}
+
+/* Tables - Landscape */
+@media
+only screen and (max-device-width:1024px),
+only screen and (max-width: 1024px) {
+
+	#posts ul li {
+		width: 265px;
+	}
+
+}
+
+/* Tables - Verticle */
+@media
+only screen and (max-device-width:768px),
+only screen and (max-width: 768px) {
+
+	#posts ul li {
+		width: 300px;
+	}
+}
+
+/* Smart Phone */
+@media
+only screen and (max-device-width:600px),
+only screen and (max-width: 600px) {
+
+	#logo, #links {
+		float: none;
+		text-align: center;
+	}
+
+	#links {
+		margin: 0 0 0 0;
+	}
+
+	#posts ul li {
+		width: 95%;
+	}
+
+	#side-bar {
+		display: none;
+	}
+
+	#page {
+		border-left: 0px;
+		width: 100%;
+		margin: 0 0 0 0 ;
+		padding: 0 0 0 0 ;
+	}
+
+	#page img {
+		width: 100%;
+	}
+}
+
+
+.post-content {
+    background: #222222!important;
+    border-radius: 0;
+    color: #444;
+}
+.post-title {
+    margin: 40px 0px 8px 0px;
+}
+
+section{
+	background-image: url('/images/18asaigon-hero.jpg');
+	background-size: cover;
+background-position: center;
+	height:100px;
+	width:100%;
+	margin-bottom: 40px;
+}
+
+h1.post-title {
+	font-weight:800
+}
+
+#footer {
+    border-top: 0px solid #dddddd;
+    color: #444;
+}
+
+
+
+/* remake homepage */
+
+#posts.leftblock, .rightblock {width:100%}
+#content.hp{background: transparent}
+.rightblock{color:#444;text-align:left}
+.rightblock b, .rightblock strong, .rightblock a {color: #555}
+
+@media (min-width: 770px) {
+	#heading {
+		padding: 25px 0px 20px 0px;
+		position: relative;
+		border-bottom: 0px solid #eee;
+		max-width: 1100px;
+		margin: 0 auto;
+		height: 40px;
+		}
+section#home-hero{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+	#content.hp{
+		margin: 0 auto;background:transparent;padding-top: 40px;
+		max-width:1100px;
+	}
+	#posts.leftblock {
+		width: 80%;
+	float: left;
+	}
+	#posts ul{width:100%}
+	.rightblock{
+		width:20%;
+		float:left;
+	}
+	.rightblock b, .rightblock strong, .rightblock a {color: #555}
+
+}
+
+@media (max-width:770px) {
+	#content {
+		margin: 0;
+		background: #f4f4f4;
+		padding: 20px;
+		margin-top: 40px;
+		color: #555!important;
+		}
+}

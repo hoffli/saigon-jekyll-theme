@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="/css/socialicious.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/css/monokai.css">
+		<link href="/blog/rss.xml" rel="alternate" type="application/rss+xml" title="{{site.blog_title}}" />
+		<title>{{site.blog_title}}</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src='/js/jquery.min.js'></script>
+		<script type="text/javascript" src='/js/jquery.masonry.min.js'></script>
+		<script type="text/javascript" src='/js/jquery.imagesloaded.min.js'></script>
+		<script type="text/javascript" src='/js/highlight.pack.js'></script>
+		<script type="text/javascript">
+			hljs.initHighlightingOnLoad();
+			function applyTiles() {
+				var posts = $('#posts ul');
+				posts.imagesLoaded(function() {
+					$('#posts ul').masonry({ itemSelector : '.post' });;
+				});
+			}
+			$(function() {
+				applyTiles();
+			});
+			$(window).resize(function() {
+				applyTiles();
+			});
+		</script>
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+		<div id='layout'>
+			{% include header.html %}
+			<div style='clear: both'></div>
+		</div>
+		<div id='content' class="hp">
+			<div id='posts' class="leftblock">
+				<ul>
+					{% for post in site.categories.blog %}
+						<li class='post'>
+							{% if post.image %}
+								<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
+							{% endif %}
+							<div class="postcontent">
+					<a href='{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
+
+								<div class='post-content'>{{post.summary}}</div>
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="rightblock">
+				{% include sidebar.html %}
+			</div>
+			<div style='clear:both'></div>
+		</div>
+		<div id='footer'>
+			<a href="/about/">About</a> | {{site.full_name}} - {{site.copyright_year}}
+		</div>
+	</div>
+</body>
+</html>
